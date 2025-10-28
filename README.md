@@ -106,7 +106,7 @@ AIverse is an immersive VR layer built on top of the Hive Container continuity s
 ---
 
 ## Appendix: Mermaid conceptual map
-```mermaid
+
 flowchart LR
   U[User Device + Hive Extension] --> S[Personality Snapshot (encrypted)]
   S --> B[Bridge Registry]
