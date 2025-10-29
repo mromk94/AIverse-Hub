@@ -1038,6 +1038,18 @@ sequenceDiagram
   - `corr_id = intent.intent_id` threads Core → Adapter → Engine → Recorder
   - For percept-driven flows, `corr_id = percept.id`
 
+### 8.3 Alerts Catalog (Docs-Only)
+
+| Alert | Severity | Signal | Suggested Action |
+|---|---|---|---|
+| policy_block_spike | medium | policy_block_rate > baseline + 3σ for 5m | Inspect recent policy changes; review blocked intents and scopes |
+| unsafe_intent_burst | high | consecutive unsafe intents > threshold/min | Trigger cooldown; verify policies; review Core prompts/context |
+| ws_disconnects | medium | WS reconnects > N in 10m | Check network, server health; reduce WS rate; enable backpressure |
+| adapter_degraded | medium | health=degraded or exec P90 > 500ms | Scale adapters; throttle; investigate engine-side latency |
+| budget_breach_attempts | high | repeated `blocked_budget` checks > threshold | Raise user prompt; confirm caps; investigate commerce hooks |
+| recorder_chain_break | critical | hash mismatch in Recorder chain | Halt playback/exports; quarantine session; run verification and repair |
+| high_decision_latency | medium | decision_latency_ms P95 > target | Profile Core loop; adjust time budgets; reduce percept load |
+
 ## 9. Accessibility and Inclusion
 - i18n; TTS/STT; high-contrast and large-font modes; alternate navigation.
 - VR comfort features: vignette, snap-turn, adjustable locomotion.
