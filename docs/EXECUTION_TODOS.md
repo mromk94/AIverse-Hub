@@ -27,6 +27,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Encrypted snapshots; export/import round-trip tested.
   - Permission UI and revoke flow fully functional.
 
+Status: Completed (docs baseline; implementation tracked in Hive_Container repo)
+Links: Hive Container — https://github.com/mromk94/Hive_Container
+
 ---
 
 ## 2) Personality Core MVP
@@ -48,6 +51,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Given scripted percepts, Core produces reproducible intents within policy.
   - Unit tests for selector/policy gating pass.
 
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 3.2 Personality Core, Decision Loop; 4.5 Percept; 4.6 Policy Decision; 5.1 Policy Evaluation; CORE_TEST_FIXTURES.md; CORE_ADVERSARIAL_TESTS.md
+
 ---
 
 ## 3) Memory Gradient Engine
@@ -68,6 +74,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Queries return top-k relevant memories with stable ranking.
   - Redaction permanently removes content while preserving audit metadata.
 
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 4.8 Memory Item; 4.9 Retrieval Scoring; 5.2 Memory Query Endpoint
+
 ---
 
 ## 4) Ethical Interpreter & Policy Engine
@@ -86,6 +95,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
 - Definition of Done
   - Safety tests and adversarial prompts blocked per policy.
   - Policy decisions are explainable and logged.
+
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 4.6.1 Reason Codes; 4.6.2 Evaluation Ordering; 5.1 Policy Evaluation Endpoint
 
 ---
 
@@ -106,6 +118,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - End-to-end: scripted session runs in MockWorld + WebXR scene.
   - Retry/backoff exercised; policy gate integrated.
 
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 3.3 Adapter SDK, Event Mapping, Manifest, Health & Heartbeat, Error Codes, Capability Matrix, Examples; 5.7 Bridge Registry
+
 ---
 
 ## 6) AI-Verse Engine Orchestrator & World Fabric
@@ -124,6 +139,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
 - Definition of Done
   - Orchestrator launches/tears down sessions reliably.
   - Personal Realm renders from snapshot attributes deterministically.
+
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 3.4 Orchestrator Lifecycle Hooks; 4.10 World Fabric Template; 5.3 Session Lifecycle
 
 ---
 
@@ -144,6 +162,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Random spot checks recompute hashes successfully.
   - Approve/rollback updates snapshot state as expected.
 
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 3.5 Recorder Hash Chain; Highlights Rules; 5.5 Playback API; Playback UI Manifest
+
 ---
 
 ## 8) Backend APIs & Realtime Bus
@@ -160,6 +181,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - REST per Architecture.md; WS `/ws/sessions/{id}`.
 - Definition of Done
   - Contract tests pass; soak tests show stable backpressure behavior.
+
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 5.x API Surface; 5.4 Session WS Stream; 5.6 Auth & Token Validation; 5.8 API Error Codes; 5.9 API Conventions
 
 ---
 
@@ -179,6 +203,9 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Security review: keys never leave client unencrypted; audits complete.
   - Red-team prompts cannot exfiltrate raw memories.
 
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 7.1 Security & Privacy Invariants; 7.2 Key Rotation & TTL; 7.3 Emergency-Stop; 7.4 Data Retention & Export
+
 ---
 
 ## 10) Observability, Metrics, and Safety Monitoring
@@ -195,3 +222,6 @@ This plan defines 10 independent, composable work modules. Each module lists Obj
   - Metrics endpoints; tracing propagation headers; log schema.
 - Definition of Done
   - Dashboards reflect real-time sessions; synthetic incidents trigger alerts.
+
+Status: Completed (docs-only)
+Links: ARCHITECTURE.md — 8.1 Metrics Catalog; 8.2 Tracing & Correlation; 8.3 Alerts Catalog
