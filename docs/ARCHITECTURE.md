@@ -992,6 +992,20 @@ sequenceDiagram
 - i18n; TTS/STT; high-contrast and large-font modes; alternate navigation.
 - VR comfort features: vignette, snap-turn, adjustable locomotion.
 
+### 9.1 Accessibility Requirements Matrix (Docs-Only)
+
+| Requirement | Required | Recommended | N/A | Notes |
+|---|---:|---:|---:|---|
+| Text-to-Speech (TTS) | ✔️ |  |  | Voice output for UI/system prompts and agent speech |
+| Speech-to-Text (STT) |  | ✔️ |  | Voice input for commands and dictation when feasible |
+| Captions/Subtitles | ✔️ |  |  | Auto-captions for TTS/voice; positional in VR; toggleable |
+| High-Contrast Mode | ✔️ |  |  | WCAG-aligned contrast presets |
+| Font Scaling | ✔️ |  |  | Global scale factor; remember per user/session |
+| Locomotion Options | ✔️ |  |  | Teleport and smooth; adjustable speed/acceleration |
+| Snap-Turn | ✔️ |  |  | Configurable angle (e.g., 30°); comfort default on |
+| Vignette | ✔️ |  |  | Adjustable intensity during movement |
+| Remappable Controls |  | ✔️ |  | Rebind primary interactions; expose presets |
+
 ## 10. Deployment Topologies
 - Dev: single-node backend + local engine + mock adapter.
 - Prod: horizontally scaled Bridge API, adapter workers, and storage; per-connector isolation.
