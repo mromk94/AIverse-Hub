@@ -175,6 +175,7 @@ Export as SVG/PNG, place in `docs/img/`, and update paths above.*
 - Core Test Fixtures: [docs/CORE_TEST_FIXTURES.md](./docs/CORE_TEST_FIXTURES.md)
 - Adversarial/Safety Tests: [docs/CORE_ADVERSARIAL_TESTS.md](./docs/CORE_ADVERSARIAL_TESTS.md)
 - Glossary: [docs/GLOSSARY.md](./docs/GLOSSARY.md)
+- Contributing: [CONTRIBUTING.md](./CONTRIBUTING.md)
 - Continuity Layer: Hive Container repository — https://github.com/mromk94/Hive_Container
 
 ---
