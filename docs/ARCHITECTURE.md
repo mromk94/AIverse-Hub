@@ -278,6 +278,25 @@ export function onEvent(evt: any) {
 { "seq": 1042, "label": "greeting", "score": 0.91, "features": ["novelty","sentiment"], "ts": 1712345700 }
 ```
 
+#### Playback UI Manifest (Docs-Only)
+
+UI preferences for the playback page; independent of stored events.
+
+```json
+{
+  "captions_on": true,
+  "highlight_filters": ["policy_block", "goal_progress"],
+  "speed": 1.0,
+  "show_policy_blocks": true,
+  "time_range": {"from": 1712345600, "to": 1712347600},
+  "include_media": false
+}
+```
+
+Notes
+- Manifest is not part of the Recorder chain; it configures the viewer.
+- `highlight_filters` map to labels produced by the extraction rules.
+
 ### 3.6 Storage, Indexing, and Realtime
 - Metadata: Postgres (snapshots, sessions, connectors, policies).
 - Blobs: encrypted object store for snapshots, recordings, media.
