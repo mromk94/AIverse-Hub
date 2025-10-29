@@ -34,8 +34,8 @@
 - **Safety-by-design:** Protective sandboxes and conservative defaults shield users.
 - **Composable & Cross-platform:** Built for OpenXR, WebXR, headset SDKs, and server adapters.
 
-> **Connection to SCL:**  
-AIverse integrates with the [Shared Consciousness Loop](./scl.md), the collective intelligence and feedback system for cross-user learning, ethical governance, and improved safety.
+> **Connection to Shared Consciousness Loop:**  
+AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md), the collective intelligence and feedback system for cross-user learning, ethical governance, and improved safety.
 
 ---
 
@@ -63,7 +63,7 @@ AIverse integrates with the [Shared Consciousness Loop](./scl.md), the collectiv
 ---
 
 ![AIverse Architecture Diagram](docs/img/aiverse-architecture.svg)
-*Core Layers & Data Flow: User Device → Personality Snapshot → Bridge Registry → AIverse Engine → Realms, Plazas, Agents → Recorder → User. SCL integration enables feedback loops and ethical oversight.*
+*Core Layers & Data Flow: User Device → Personality Snapshot → Bridge Registry → AIverse Engine → Realms, Plazas, Agents → Recorder → User. Shared Consciousness Loop integration enables feedback loops and ethical oversight.*
 
 ---
 
@@ -109,16 +109,16 @@ AIverse integrates with the [Shared Consciousness Loop](./scl.md), the collectiv
 
 ## 🔗 Shared Consciousness Loop
 
-> **Explore [scl.md](./scl.md) for more!**
+> **Explore [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md) for more!**
 
-- SCL connects Personality Snapshots and session data to a collective learning and oversight system.
+- The Shared Consciousness Loop connects Personality Snapshots and session data to a collective learning and oversight system.
 - Enables ethical interventions, best practice propagation, and trust-building across the AIverse.
 - Feeds session data and user feedback into cross-user improvement loops.
 
 ---
 
 ![Shared Consciousness Loop](docs/img/scl-loop.svg)
-*How session data and collective feedback propagate through the SCL for safety, ethics, and consensus.*
+*How session data and collective feedback propagate through the Shared Consciousness Loop for safety, ethics, and consensus.*
 
 ---
 
@@ -147,7 +147,7 @@ AIverse integrates with the [Shared Consciousness Loop](./scl.md), the collectiv
 > 1. Alice creates a Personality Snapshot (calm, curious, art-lover).
 > 2. She enters a luminous gallery—her AI highlights generative installations inspired by her sketches.
 > 3. She sets her AI to attend an auction next week (Proxy Mode), capping spend. AI attends, bids conservatively, and returns an approval summary.
-> 4. Session data feeds into the SCL, improving future experiences for all.
+> 4. Session data feeds into the Shared Consciousness Loop, improving future experiences for all.
 
 ---
 
@@ -168,4 +168,4 @@ Export as SVG/PNG, place in `docs/img/`, and update paths above.*
 ---
 
 ## 💡 Ready to experience the future of AI-powered VR?  
-Jump to [scl.md](./scl.md) and explore the shared consciousness ecosystem!
+Jump to [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md) and explore the shared consciousness ecosystem!
