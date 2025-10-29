@@ -177,6 +177,7 @@ Export as SVG/PNG, place in `docs/img/`, and update paths above.*
 - Glossary: [docs/GLOSSARY.md](./docs/GLOSSARY.md)
 - Contributing: [CONTRIBUTING.md](./CONTRIBUTING.md)
 - Security Policy: [SECURITY.md](./SECURITY.md)
+- Code of Conduct: [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
 - Continuity Layer: Hive Container repository — https://github.com/mromk94/Hive_Container
 
 ---
