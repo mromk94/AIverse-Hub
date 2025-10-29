@@ -163,6 +163,37 @@ Notes
 - Partial = requires project-specific glue or reduced functionality.
 - Capabilities are adapter-version dependent; see Adapter Manifest `capabilities`.
 
+#### Adapter SDK Examples (Docs-Only)
+
+```ts
+// onSpawn(manifest) → AdapterHandle
+export async function onSpawn(manifest: any) {
+  return { sessionId: manifest.session_id, health: "ok" };
+}
+
+// execute(intent) → Promise<ActionResult>
+const seen = new Set<string>();
+export async function execute(intent: any) {
+  if (seen.has(intent.intent_id)) return { ok: true }; // idempotency
+  seen.add(intent.intent_id);
+  // translate → engine action (pseudo)
+  // await engine.perform(intent)
+  return { ok: true };
+}
+
+// cancel(intent_id) → Promise<void>
+export async function cancel(intent_id: string) {
+  // best-effort: dequeue or abort in-flight
+  // telemetry on forced stop
+  onEvent({ type: "error", payload: { code: "stopped", intent_id }, ts: Date.now() });
+}
+
+// onEvent(event)
+export function onEvent(evt: any) {
+  /* emit to Core via WS */
+}
+```
+
 ### 3.4 AI-Verse Engine (World Runtime)
 - Agent Orchestrator: spawns AI embodiments, manages lifecycles, routes events.
 - World Fabric: meta-hubs, personal realms, public plazas, specialized zones.
