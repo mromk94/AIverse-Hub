@@ -149,6 +149,20 @@ Interfaces
 - `openDialog`
   - Show UI panel/modal with context payload; always cancellable by user
 
+#### Adapter Capability Matrix (Docs-Only)
+
+| Capability | WebXR | Unity | Unreal | Notes |
+|---|---|---|---|---|
+| speak | Full | Full | Full | TTS + lip-sync; ensure viseme mapping per engine |
+| move | Partial | Full | Full | WebXR: `moveTo` only; Unity/Unreal use NavMesh/pathfinding |
+| animate | Partial | Full | Full | WebXR limited to named clips; engine anim graphs preferred |
+| buyItem | Partial | Partial | Partial | Requires sandbox commerce API; policy allow + budget caps |
+| openDialog | Full | Full | Full | Map to engine UI system; must be cancellable; respect accessibility |
+
+Notes
+- Partial = requires project-specific glue or reduced functionality.
+- Capabilities are adapter-version dependent; see Adapter Manifest `capabilities`.
+
 ### 3.4 AI-Verse Engine (World Runtime)
 - Agent Orchestrator: spawns AI embodiments, manages lifecycles, routes events.
 - World Fabric: meta-hubs, personal realms, public plazas, specialized zones.
