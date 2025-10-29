@@ -851,6 +851,35 @@ Payload
 { "error": { "code": "blocked_scope", "message": "Scope insufficient", "corr_id": "i_1042" } }
 ```
 
+### 5.9 API Conventions (Docs-Only)
+
+- Pagination
+  - Request: `{ page: { size: 100, cursor: null|string } }`
+  - Response: `{ page: { next_cursor: string|null } }`
+  - Stable ordering by `ts` or `seq`; max `size` = 1000; default = 100
+
+- Rate Limit Headers
+  - `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` (epoch seconds)
+
+- Idempotency
+  - For safe POSTs, accept `Idempotency-Key`; duplicates return same result envelope
+
+- Envelopes
+  - Success: `{ data: any, meta?: { corr_id?, trace_id? } }`
+  - Error: `{ error: { code, message, corr_id? }, meta?: { trace_id? } }`
+
+- Time Format
+  - All timestamps are UTC seconds (number); clients may display localized time
+
+- JSON Evolution Rules
+  - Unknown fields MUST be ignored by receivers
+  - Use `meta` objects for forward-compatible extensions
+
+Example success envelope
+```json
+{ "data": { "id": "sess_001", "state": "running" }, "meta": { "corr_id": "i_42", "trace_id": "t-abc" } }
+```
+
 ## 6. Runtime Flows
 
 ### 6.1 Session Launch (Sequence)
