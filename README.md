@@ -1,10 +1,10 @@
-# 🌌 AIverse Hub  
+# 🌌 AI-Verse Hub  
 *Your AI Personality, Immersively*
 
 ---
 
-![AIverse Concept Art](docs/img/aiverse-concept-art.png)
-*AIverse: Your digital twin explores, learns, creates, and connects.*
+![AI-Verse Concept Art](docs/img/aiverse-concept-art.png)
+*AI-Verse: Your digital twin explores, learns, creates, and connects.*
 
 ---
 
@@ -21,12 +21,13 @@
 10. [Success Metrics](#success-metrics)
 11. [Example User Story](#example-user-story)
 12. [Visual Diagrams](#visual-diagrams)
+13. [Further Documentation](#further-documentation)
 
 ---
 
 ## 🌠 Vision & Principles
 
-**AIverse** is a VR platform layer built atop the Hive Container continuity system, where every user carries a secure, personal AI Personality Snapshot—a digital twin that learns, adapts, and acts as your companion, proxy, and creative partner across virtual worlds.  
+**AI-Verse** is a VR platform layer built atop the Hive Container continuity system, where every user carries a secure, personal AI Personality Snapshot—a digital twin that learns, adapts, and acts as your companion, proxy, and creative partner across virtual worlds.  
 **Key principles:**  
 - **Person-first:** Human oversight is always primary; you control your AI.
 - **Continuity:** Your Personality Snapshot moves seamlessly across worlds via Hive Container.
@@ -35,7 +36,7 @@
 - **Composable & Cross-platform:** Built for OpenXR, WebXR, headset SDKs, and server adapters.
 
 > **Connection to Shared Consciousness Loop:**  
-AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md), the collective intelligence and feedback system for cross-user learning, ethical governance, and improved safety.
+AI-Verse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md), the collective intelligence and feedback system for cross-user learning, ethical governance, and improved safety.
 
 ---
 
@@ -62,8 +63,8 @@ AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOU
 
 ---
 
-![AIverse Architecture Diagram](docs/img/aiverse-architecture.svg)
-*Core Layers & Data Flow: User Device → Personality Snapshot → Bridge Registry → AIverse Engine → Realms, Plazas, Agents → Recorder → User. Shared Consciousness Loop integration enables feedback loops and ethical oversight.*
+![AI-Verse Architecture Diagram](docs/img/aiverse-architecture.svg)
+*Core Layers & Data Flow: User Device → Personality Snapshot → Bridge Registry → AI-Verse Engine → Realms, Plazas, Agents → Recorder → User. Shared Consciousness Loop integration enables feedback loops and ethical oversight.*
 
 ---
 
@@ -112,7 +113,7 @@ AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOU
 > **Explore [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOUSNESS_LOOP_SCL.md) for more!**
 
 - The Shared Consciousness Loop connects Personality Snapshots and session data to a collective learning and oversight system.
-- Enables ethical interventions, best practice propagation, and trust-building across the AIverse.
+- Enables ethical interventions, best practice propagation, and trust-building across the AI-Verse.
 - Feeds session data and user feedback into cross-user improvement loops.
 
 ---
@@ -153,8 +154,8 @@ AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOU
 
 ## 🖼️ Visual Diagrams
 
-1. **AIverse Architecture:**  
-   ![AIverse Architecture](docs/img/aiverse-architecture.svg)
+1. **AI-Verse Architecture:**  
+   ![AI-Verse Architecture](docs/img/aiverse-architecture.svg)
 
 2. **User Experience Flow:**  
    ![User Journey Flow](docs/img/user-journey-flow.png)
@@ -164,6 +165,17 @@ AIverse integrates with the [SHARED_CONSCIOUSNESS_LOOP_SCL.md](./SHARED_CONSCIOU
 
 *Diagrams made in [draw.io](https://diagrams.net), [Excalidraw](https://excalidraw.com), or [Figma](https://figma.com).  
 Export as SVG/PNG, place in `docs/img/`, and update paths above.*
+
+---
+
+## 📚 Further Documentation
+
+- Architecture: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)
+- Modular Execution Plan: [docs/EXECUTION_TODOS.md](./docs/EXECUTION_TODOS.md)
+- Core Test Fixtures: [docs/CORE_TEST_FIXTURES.md](./docs/CORE_TEST_FIXTURES.md)
+- Adversarial/Safety Tests: [docs/CORE_ADVERSARIAL_TESTS.md](./docs/CORE_ADVERSARIAL_TESTS.md)
+- Glossary: [docs/GLOSSARY.md](./docs/GLOSSARY.md)
+- Continuity Layer: Hive Container repository — https://github.com/mromk94/Hive_Container
 
 ---
 

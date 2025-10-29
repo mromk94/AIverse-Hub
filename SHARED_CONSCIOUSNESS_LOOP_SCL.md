@@ -6,6 +6,8 @@
 **Version:** 1.0 — Draft for GitHub Publication  
 **License:** Creative Commons BY-NC-SA 4.0
 
+See Architecture overview: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)
+
 ---
 
 ## 1️⃣ Abstract
