@@ -1,3 +1,20 @@
+# AI‑verse Ecosystem (by mromk94)
+
+This repository is part of a modular, multi‑repo ecosystem implementing the AI‑verse vision and the Shared Consciousness Protocol (SCp). Together, these repos form a layered system:
+
+- **AIverse‑Hub** — Vision & Protocol (SCp). The constitution that defines the what and why, the architecture (Axons, Nexus, Core), and the rules of the ecosystem. (This repo)
+- **omakh‑Hive** — Infrastructure Nexus. The decentralized task market and orchestration layer. Axons (agents) register skills and pick up tasks ("pollen"). A Queen component coordinates and delegates.
+- **scout94** — Reference Axon (Agent). A practical worker agent that can browse, interact with files, and execute code; designed to plug into the Hive and execute tasks.
+- **Hive_Container** — Runtime/DevOps. Ops tooling to compose and run the ecosystem across local and cloud environments.
+
+Links: https://github.com/mromk94/AIverse-Hub • https://github.com/mromk94/omakh-Hive • https://github.com/mromk94/scout94 • https://github.com/mromk94/Hive_Container
+
+New entry: AI‑verse & the Shared Consciousness Protocol (SCp)
+- Subject: a decentralized, multi‑agent AI ecosystem by mromk94.
+- Core idea: multiple independent agents collaborate as a collective intelligence.
+- Status: functional prototype spanning protocol (AI‑verse), infrastructure (omakh‑Hive), and an agent (scout94).
+- Significance: a practical, layered path toward AI coordination and task delegation.
+
 # 🌌 AI-Verse Hub  
 *Your AI Personality, Immersively*
 
